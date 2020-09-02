@@ -6,7 +6,7 @@ import {useLocation} from "react-router-dom"
 const Home = () => {
     const user = JSON.parse(localStorage.getItem("user"))
     const location = useLocation()
-    const [login,setLogin] = useState(location.state ? location.state.mylogin : 'No')
+    const [login] = useState(location.state ? location.state.mylogin : 'No')
 
     const [posts,setPosts] = useState([])
 

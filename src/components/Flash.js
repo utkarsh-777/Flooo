@@ -14,7 +14,7 @@ const Flash = () => {
                 history.push('/login')
             }
         },3000)
-    },[history])
+    },[history,user])
    
     return(
         <div className='container'>
