@@ -24,7 +24,7 @@ const Home = () => {
     .then(result=>{
         setPosts(result)
     }).catch(err=>console.log(err))     
-    },[])
+    },[login])
     
     return(
         <div>
